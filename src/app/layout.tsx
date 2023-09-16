@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
-import Home from './page'
+
 
 
 
@@ -29,8 +29,7 @@ export default function RootLayout({
             </nav>
           </header>
           <main className='mx-auto max-w-5xl'>
-            <Home></Home>
-            
+            {children}
           </main>
         </body>
     </html>

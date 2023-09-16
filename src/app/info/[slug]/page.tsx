@@ -7,7 +7,7 @@ export async function generateStaticParams() {
 }
 
 export default async function InfoDetails({params, }: {params: {slug: string};}) {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon${params.slug}`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.slug}`);
     const pokemon = await response.json();
 
     return <div className="flex items-center">  
